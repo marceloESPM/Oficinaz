@@ -1,0 +1,8 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "HPDsQh55tMHFSGvfdBrT5"
+uri = "file://public/hero-workshop.png"
+type = "image"
+title = "hero-workshop-automotive"

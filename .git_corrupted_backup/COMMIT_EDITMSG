@@ -1,0 +1,10 @@
+Adjust spacing in hero section to prevent text cutoff
+
+Adjust various padding and margin values within the Hero component to ensure all text content is visible on smaller viewports.
+
+Replit-Commit-Author: Agent
+Replit-Commit-Session-Id: 18e671b5-a73c-45a6-a03e-84c9542617e0
+Replit-Commit-Checkpoint-Type: full_checkpoint
+Replit-Commit-Event-Id: 89af65e1-60d5-46f7-9b0e-83949b71df73
+Replit-Commit-Screenshot-Url: https://storage.googleapis.com/screenshot-production-us-central1/b8bf4931-adde-42af-86e6-791331718501/18e671b5-a73c-45a6-a03e-84c9542617e0/C99d4ND
+Replit-Helium-Checkpoint-Created: true

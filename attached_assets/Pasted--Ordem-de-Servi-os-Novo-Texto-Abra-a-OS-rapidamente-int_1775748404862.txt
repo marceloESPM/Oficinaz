@@ -1,0 +1,37 @@
+*   **Ordem de Serviços**
+    *   **Novo Texto:** "Abra a OS rapidamente, integre peças e mão de obra com precisão e garanta que cada serviço executado seja faturado sem perdas, do orçamento à liquidação financeira."
+    *   **Bullet Points posicionados abaixo da imagem da tela:**
+        *   Abertura de OS em segundos
+        *   Transferência direta para o PDV
+        *   Histórico completo por veículo e cliente
+        *   NF-e emitida diretamente da OS
+        *   Acompanhamento em tempo real
+
+*   **Emissão de Notas**
+    *   **Novo Texto:** "Emissão automatizada de NF-e, NFS-e e NFC-e diretamente da OS. Garanta conformidade fiscal com a separação correta de peças e serviços, evitando bitributação e retrabalho."
+    *   **Bullet Points posicionados abaixo da imagem da tela:**
+        *   NF-e, NFS-e, NFC-e, CT-e e NFP-e
+        *   Diretamente da OS ou da venda
+        *   Sem sair do Oficinaz
+
+*   **Controle Financeiro**
+    *   **Novo Texto:** "Gestão completa de Contas a Pagar e Receber, Fluxo de Caixa Projetado e DRE Gerencial. Automatize sua conciliação bancária e tenha controle total sobre a inadimplência e a saúde financeira da oficina."
+    *   **Bullet Points posicionados abaixo da imagem da tela:**
+        *   Registre receitas e despesas
+        *   Veja o fluxo de caixa atualizado
+        *   Faça conciliação bancária
+        *   Acompanhe o DRE
+
+*   **Fechamento no PDV**
+    *   **Novo Texto:** "Fechamento de caixa ágil com múltiplas formas de pagamento. Baixa automática de estoque, emissão fiscal simultânea e integração imediata com o Contas a Receber, sem digitação dupla."
+    *   **Bullet Points posicionados abaixo da imagem da tela:**
+        *   Pagamento
+        *   Estoque
+        *   Nota fiscal
+        *   Poucos cliques, zero digitação, produtividade total
+
+*   **Integração entre áreas**
+    *   **Novo Texto:** "Operação e financeiro 100% sincronizados. Acesse relatórios gerenciais precisos com indicadores-chave (KPIs) como Ticket Médio, Margem de Contribuição por serviço e Ponto de Equilíbrio."
+    *   **Bullet Points posicionados abaixo da imagem da tela:**
+        *   Serviços, financeiro, estoque e vendas conectados automaticamente
+        *   Relatórios unificados para decisões mais inteligentes

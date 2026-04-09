@@ -1,0 +1,101 @@
+Atue como um designer senior de interface, UX writer senior e front-end developer experiente em landing pages SaaS B2B.
+
+Sua tarefa é IMPLEMENTAR uma nova seção na home do site do Oficinaz, posicionada exatamente ENTRE a seção de preços e a seção de FAQ.
+
+Objetivo da seção:
+Criar uma faixa de conversão clara, elegante e persuasiva para comunicar uma condição comercial especial do Oficinaz, sem confundir essa oferta com o pricing principal.
+
+Importante:
+- a nova seção deve entrar entre Preço e FAQ
+- ela deve se integrar visualmente ao restante da home
+- ela deve respeitar o design system e a identidade atual do Oficinaz
+- ela deve parecer premium, organizada, escaneável e confiável
+- ela não deve parecer um banner promocional genérico
+- ela não deve quebrar a lógica comercial dos planos existentes
+- ela não deve alterar pricing, funcionalidades, layout dos planos ou FAQ
+- ela deve apenas adicionar uma nova faixa estratégica de conversão
+
+Copy obrigatória da seção:
+
+Headline:
+Use o Oficinaz sem mensalidade
+
+Texto de apoio:
+Concentre suas compras de peças, acessórios, químicos e materiais de consumo em fornecedores parceiros. Ao ultrapassar R$ 10 mil em pedidos no mês, sua oficina ou centro automotivo fica isento da mensalidade do Oficinaz.
+
+CTAs:
+- Indicar fornecedor
+- Quero ser fornecedor
+- Cotar peças, acessórios e insumos
+
+Direção de UX e design:
+- essa seção deve funcionar como uma ponte de conversão entre Preços e FAQ
+- depois de ver os planos, o visitante precisa perceber que existe uma condição comercial alternativa
+- a seção deve reforçar valor e reduzir objeção de preço
+- a condição deve estar clara, mas sem poluir a interface
+- o layout deve ser mais nobre e bem resolvido do que promocional
+- use excelente hierarquia visual
+- a leitura precisa ser rápida em desktop e mobile
+- preserve o aspecto premium do site
+
+Estrutura recomendada:
+Crie uma faixa horizontal com visual de destaque, preferencialmente em 2 colunas no desktop e empilhada no mobile.
+
+Sugestão:
+- coluna esquerda: headline, texto de apoio e CTAs
+- coluna direita: um card ou bloco de apoio visual com resumo da condição comercial
+
+No card lateral ou bloco de apoio, você pode sintetizar visualmente algo como:
+- Compras com fornecedores parceiros
+- Acima de R$ 10 mil no mês
+- Isenção da mensalidade do Oficinaz
+
+Não altere a copy principal fornecida acima.
+Você pode apenas melhorar microdetalhes de layout, hierarquia, quebra de linha e legibilidade.
+Se achar necessário, adicione uma microcopy legal curta no rodapé da seção, mas sem mudar a mensagem principal.
+
+Exemplo de microcopy opcional:
+Benefício sujeito a critérios comerciais e validação de compras com fornecedores parceiros.
+
+Direção visual obrigatória:
+- seguir a linguagem visual atual do projeto
+- respeitar o design system do Oficinaz
+- manter tipografia, cores, contraste, espaçamentos e bordas consistentes com a home
+- usar fundo de destaque que diferencie a faixa da seção de preços e da FAQ
+- manter aparência premium e limpa
+- evitar excesso de texto
+- evitar excesso de ícones
+- evitar aparência de “promoção barata”
+- manter CTA principal e secundários bem distribuídos
+
+Direção específica dos botões:
+- os 3 CTAs devem ficar visualmente equilibrados
+- um deles pode ter maior destaque visual e os outros dois podem ser secundários
+- preserve boa leitura em desktop e mobile
+- não deixe os botões espremidos ou visualmente pesados
+
+Instruções técnicas:
+1. Analise a estrutura atual do projeto
+2. Identifique a seção de preços e a seção de FAQ
+3. Insira a nova seção exatamente entre elas
+4. Preserve a stack atual do projeto
+5. Reaproveite componentes, tokens e estilos existentes se fizer sentido
+6. Não crie dependências novas sem necessidade
+7. Preserve responsividade
+8. Preserve performance
+9. Preserve organização do código
+
+Importante:
+- não alterar pricing existente
+- não alterar planos
+- não alterar FAQ
+- não alterar funcionalidades existentes do produto
+- não mudar a proposta principal da home
+- apenas adicionar essa nova seção com alta qualidade visual e comercial
+
+Formato final da resposta:
+- implemente a seção no código
+- mostre quais arquivos foram alterados
+- resuma em poucos bullets o que foi feito
+- não entregue diagnóstico longo
+- não entregue análise teórica

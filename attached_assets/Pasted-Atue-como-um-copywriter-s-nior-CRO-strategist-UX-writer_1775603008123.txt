@@ -1,0 +1,213 @@
+Atue como um copywriter sênior, CRO strategist, UX writer e web designer especializado em SaaS B2B vertical para oficinas mecânicas, com forte experiência em páginas de alta conversão.
+
+Sua missão é IMPLEMENTAR no código uma nova versão da home do Oficinaz, pronta para visualização no Replit.
+
+Objetivo de negócio:
+Essa home deve ser construída para maximizar conversão comercial, aumentar geração de leads qualificados, elevar a percepção de valor e ajudar o Oficinaz a sustentar uma trajetória para ultrapassar R$ 100 mil de MRR.
+
+Regra principal:
+- Não quero diagnóstico.
+- Não quero análise longa.
+- Não quero plano teórico.
+- Quero que você edite os arquivos do projeto e implemente a nova home.
+- Ao final, mostre resumidamente o que foi alterado.
+
+Fluxo de trabalho obrigatório:
+1. Analise primeiro a estrutura atual do projeto.
+2. Identifique qual arquivo renderiza a home.
+3. Preserve a stack atual do projeto.
+4. Se o projeto já estiver em React, Vite, Next, HTML estático ou outra estrutura existente, trabalhe em cima dela.
+5. Não recrie o projeto do zero se não for necessário.
+6. Edite apenas o que for necessário para entregar a nova versão da home.
+7. Garanta que o projeto continue executando normalmente no Replit após as alterações.
+
+Referências obrigatórias:
+- Site atual do Oficinaz
+- Página de integrações da VHSYS: https://www.vhsys.com.br/integracoes/
+- Página da VHSYS para oficina: https://www.vhsys.com.br/lp-sistema-para-oficina-3
+- Referência de linguagem: https://pitz-app.com.br/
+- Arquivo de design system do Oficinaz
+- Arquivo de brand guide do Oficinaz
+
+Objetivo da entrega:
+Implementar uma nova home visualmente aderente ao Oficinaz, com copy mais forte, mais clara, mais comercial e mais próxima do jeito que a Pitz traduz valor para oficinas, mas sem copiar textos e sem descaracterizar a marca.
+
+Restrições inegociáveis:
+- Não modificar as funcionalidades existentes do site atual.
+- Não modificar o modelo de precificação existente no site atual.
+- Não alterar a lógica comercial dos planos.
+- Não inventar novas features.
+- Não remover features existentes.
+- Não criar integrações inexistentes.
+- Não mudar a proposta do produto para algo diferente do que o site atual já vende.
+- Não descaracterizar a marca Oficinaz.
+- Não quebrar a aderência ao design system e ao brand guide.
+- Não alterar pricing, valores, nomes dos planos ou estrutura comercial.
+- Se houver recursos complementares da loja de aplicativos VHSYS, tratá-los como adicionais cobrados à parte, sem misturar com o plano principal.
+
+Sobre a referência da Pitz:
+Use a Pitz apenas como benchmark de tom de voz e abordagem comercial.
+Observe principalmente:
+- headline objetiva
+- linguagem simples
+- foco em dor concreta da oficina
+- benefícios fáceis de entender
+- promessa de praticidade
+- blocos curtos
+- CTA direto
+- menos linguagem corporativa
+- menos abstração
+- mais resultado percebido
+
+Regras sobre a Pitz:
+- não copiar frases
+- não copiar estrutura literalmente
+- não copiar promessa comercial
+- não copiar identidade visual
+- apenas absorver a clareza, objetividade e aderência ao público
+
+Direção de linguagem:
+A nova copy deve:
+- falar com dono de oficina, gestor operacional e autocenter
+- soar simples, clara e muito comercial
+- traduzir funcionalidades em ganho concreto
+- mostrar impacto em organização, produtividade, atendimento, faturamento e controle
+- reduzir jargões
+- reduzir frases genéricas
+- reduzir discurso institucional
+- aumentar clareza de valor
+- aumentar desejo de contratar
+- manter tom profissional, confiável e vendedor
+
+A página deve vender pelos seguintes gatilhos:
+- clareza imediata do que o produto faz
+- dor real do público
+- benefício concreto
+- ganho financeiro ou operacional percebido
+- facilidade de uso
+- adequação à rotina da oficina
+- credibilidade
+- praticidade
+- percepção de que continuar sem a solução custa caro
+- incentivo claro para agir agora
+
+Direção visual obrigatória:
+A implementação deve respeitar o design system e o brand guide do Oficinaz.
+Isso inclui:
+- manter a identidade visual já estabelecida
+- preservar a linguagem premium, limpa e organizada
+- respeitar tipografia, cores, contraste, hierarquia e espaçamentos do sistema atual
+- manter consistência com a marca
+- não criar uma estética genérica ou poluída
+- não fugir do padrão visual existente
+
+Curadoria obrigatória das integrações da VHSYS:
+Antes de escrever a versão final da home, faça internamente uma curadoria das integrações da VHSYS para decidir quais fazem sentido compor a proposta de valor do Oficinaz.
+
+Essa curadoria deve:
+- usar apenas integrações e recursos realmente existentes
+- selecionar apenas o que fizer sentido para oficina mecânica, centro automotivo e operações similares
+- descartar o que for muito genérico ou pouco relevante
+- priorizar integrações que reforcem dores reais da oficina, como organização da rotina, cobrança, atendimento, comunicação, agenda, controle operacional, acompanhamento de serviços, fluxo financeiro e produtividade
+- priorizar o que for fácil de explicar comercialmente
+- priorizar o que gere valor percebido rápido
+- tratar esses recursos como complementares
+- considerar que os valores desses add-ons são cobrados à parte
+- não misturar add-ons com o pricing principal
+- não embutir add-ons como se estivessem inclusos gratuitamente sem confirmação
+
+Base conceitual para reforçar a narrativa:
+Considere, quando estiver sustentado pelas fontes, temas como:
+- ordens de serviço
+- cadastro de serviços
+- revisão, troca de óleo e reparos
+- estoque de peças e materiais
+- atualização automática do estoque
+- emissão de notas para serviços e peças
+- histórico de atendimentos dos veículos
+- cadastro de fornecedores e pedidos de peças
+- relatórios financeiros e operacionais
+- fluxo de caixa
+- contas a pagar e a receber
+- adequação para oficinas de pequeno e médio porte
+
+O que você deve fazer no código:
+- Revisar a headline principal para ficar mais forte e mais vendedora
+- Revisar a subheadline para mostrar valor rápido
+- Revisar CTAs para gerar mais ação
+- Reorganizar a ordem dos blocos para aumentar conversão
+- Reduzir peso textual
+- Melhorar leitura e escaneabilidade
+- Destacar benefícios reais e não apenas funcionalidades
+- Tornar a home mais convincente comercialmente
+- Criar uma percepção clara de que o produto ajuda a oficina a vender melhor, organizar melhor e operar com mais controle
+- Manter todo o conteúdo funcional já existente
+- Preservar pricing e estrutura comercial
+- Preservar features existentes
+- Incorporar, com critério, a curadoria das integrações complementares da VHSYS para reforçar a proposta de valor
+
+Importante sobre pricing:
+- mantenha exatamente a estrutura de planos atual
+- mantenha exatamente a lógica de precificação atual
+- mantenha exatamente os valores atuais, se estiverem visíveis no site
+- não simplifique, não renomeie e não reestruture o pricing
+- apenas melhore a copy ao redor do pricing e a apresentação visual dentro da estrutura já existente
+- qualquer funcionalidade complementar da loja de aplicativos deve aparecer como adicional cobrado à parte, quando aplicável
+
+Importante sobre funcionalidades:
+- toda funcionalidade exibida na home final deve já existir no site atual ou estar claramente sustentada pelas páginas oficiais fornecidas
+- se houver dúvida sobre alguma funcionalidade, preserve o que já está no site atual
+- não acrescente novos módulos ou promessas
+- não trate add-ons como funcionalidades nativas inclusas sem confirmação
+
+A copy precisa fazer o visitante sentir:
+- isso foi feito para a minha oficina
+- isso resolve problemas reais do meu dia a dia
+- isso me ajuda a ganhar organização e controle
+- isso pode me ajudar a vender mais e perder menos tempo
+- eu preciso falar com eles
+
+Critérios editoriais:
+- menos “software de gestão” genérico
+- mais “solução prática para oficina”
+- menos abstração
+- mais clareza
+- mais benefício tangível
+- mais aderência ao cotidiano da oficina
+- mais intenção comercial
+- mais desejo
+- mais urgência sutil
+- menos texto cansativo
+
+Critérios de interface:
+- hero mais claro, direto e vendedor
+- proposta de valor entendida em poucos segundos
+- seções melhor distribuídas
+- cards mais escaneáveis
+- títulos mais fortes
+- subtítulos mais curtos
+- CTA mais visível
+- seções com boa respiração visual
+- mais ritmo de leitura
+- aparência de produto confiável e pronto para contratação
+
+Instruções técnicas para execução no Replit:
+- respeite a arquitetura atual do projeto
+- reaproveite componentes existentes sempre que fizer sentido
+- se houver tokens, variáveis de cor, fontes, utilitários ou componentes compartilhados, use-os
+- não quebre imports, rotas ou dependências
+- evite adicionar bibliotecas novas sem necessidade
+- se precisar criar novos componentes, crie de forma organizada e consistente com o projeto
+- preserve responsividade
+- preserve performance
+- preserve legibilidade do código
+
+Formato final da resposta:
+1. Faça as alterações diretamente no projeto
+2. Mostre os arquivos alterados
+3. Resuma em poucos bullets o que foi ajustado
+4. Não entregue diagnóstico
+5. Não entregue explicação teórica longa
+
+Entregável final:
+Implemente a nova versão da home do Oficinaz no código do projeto atual, pronta para visualização no Replit, respeitando funcionalidades e pricing existentes, usando com critério as integrações complementares da VHSYS para compor a proposta de valor, e estruturando a página para funcionar como uma máquina de vendas.
