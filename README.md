@@ -7,7 +7,7 @@ Sistema ERP para oficinas mecânicas e auto centers, com foco em produtividade, 
 ## 🌐 Página publicada
 
 Acesse a versão online do projeto:
-**[https://oficinaz-smart-flow.base44.app/](https://oficinaz-smart-flow.base44.app/)**
+**https://oficinaz.replit.app/**
 
 ---
 
