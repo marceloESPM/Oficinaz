@@ -47,7 +47,7 @@ Siga os passos abaixo para rodar o projeto localmente.
 
 ### 1. Clonar o repositório
 ```bash
-git clone https://github.com/celocarota/Oficinaz.git
+git clone https://github.com/marceloESPM/Oficinaz.git
 ```
 
 ### 2. Acessar a pasta do projeto
@@ -64,8 +64,8 @@ npm install
 
 Crie um arquivo chamado `.env.local` na raiz do projeto e configure as variáveis de ambiente:
 ```env
-VITE_BASE44_APP_ID=your_app_id
-VITE_BASE44_APP_BASE_URL=your_backend_url
+VITE_REPLIT_APP_ID=your_app_id
+VITE_REPLIT_APP_BASE_URL=your_backend_url
 ```
 
 ### 5. Rodar o projeto
@@ -89,16 +89,15 @@ Após finalizar as mudanças, publique a nova versão pelo ambiente do Base44.
 ## 📁 Repositório
 
 Código-fonte do projeto:  
-**[https://github.com/celocarota/Oficinaz](https://github.com/celocarota/Oficinaz)**
+**https://github.com/marceloESPM/Oficinaz**
 
 ---
 
 ## ⚠️ Observações
 
-- O projeto está integrado ao Base44
+- O projeto está integrado ao Replit
 - Alterações enviadas ao repositório podem refletir no ambiente conectado
-- Para publicação final, utilize o fluxo de **publish** do Base44
-
+- Para publicação final, utilize o fluxo de **publish** do Replit
 ---
 
 ## 👤 Autor
