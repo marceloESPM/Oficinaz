@@ -90,7 +90,7 @@ export default function PartnerBenefit() {
             lineHeight: 1.8,
             margin: "0 0 14px 0",
           }}>
-            Concentre suas compras de peças, acessórios, químicos e materiais de consumo em fornecedores parceiros.
+            Faça suas compras de peças, acessórios, químicos e insumos com nossos fornecedores homologados.
           </p>
 
           <p style={{
