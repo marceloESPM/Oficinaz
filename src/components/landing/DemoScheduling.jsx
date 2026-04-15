@@ -8,76 +8,82 @@ const beneficios = [
 
 export default function DemoScheduling() {
   return (
-    <section id="demo" style={{ padding: "96px 24px", background: "#f8f9fb" }}>
-      <div style={{ maxWidth: 860, margin: "0 auto" }}>
+    <section id="demo" style={{ padding: "100px 24px", background: "#f8f9fb" }}>
+      <div style={{ maxWidth: 1100, margin: "0 auto" }}>
 
+        {/* Section header — same pattern as other sections */}
+        <div style={{ textAlign: "center", marginBottom: 64 }}>
+          <span style={{ color: "#2ec4a0", fontSize: 13, fontWeight: 700, letterSpacing: 1.5, textTransform: "uppercase" }}>
+            Demonstração gratuita
+          </span>
+          <h2 style={{
+            fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800,
+            color: "#111d2e", marginTop: 12, letterSpacing: "-1px", lineHeight: 1.15,
+          }}>
+            Quer ver o <span style={{ color: "#2ec4a0" }}>Oficinaz</span> funcionando?
+          </h2>
+          <p style={{ color: "#5a6778", fontSize: 17, maxWidth: 500, margin: "16px auto 0", lineHeight: 1.7 }}>
+            Em 30 minutos você vê o sistema rodando com exemplos reais de
+            oficinas como a sua. Sem enrolação, sem compromisso.
+          </p>
+        </div>
+
+        {/* 2-col content */}
         <div style={{
-          background: "#fff", borderRadius: 24,
-          border: "1px solid #e2e6ec",
-          boxShadow: "0 12px 48px rgba(17,29,46,0.07)",
-          padding: "64px 72px",
-          display: "grid", gridTemplateColumns: "1fr 1fr", gap: 64, alignItems: "center",
+          display: "grid", gridTemplateColumns: "1fr 1fr", gap: 48, alignItems: "center",
         }} className="demo-grid">
 
-          {/* Left */}
+          {/* Left — benefits + testimonial */}
           <div>
-            <div style={{
-              display: "inline-flex", alignItems: "center", gap: 8,
-              background: "rgba(46,196,160,0.10)", border: "1px solid rgba(46,196,160,0.28)",
-              padding: "6px 16px", borderRadius: 100, marginBottom: 20,
-            }}>
-              <Video size={13} style={{ color: "#2ec4a0" }} />
-              <span style={{ color: "#127055", fontSize: 13, fontWeight: 700 }}>Demonstração gratuita</span>
-            </div>
-
-            <h2 style={{
-              fontSize: "clamp(26px, 3.2vw, 38px)", fontWeight: 800,
-              color: "#111d2e", letterSpacing: "-0.8px", lineHeight: 1.2,
-              marginBottom: 16,
-            }}>
-              Quer ver o <span style={{ color: "#2ec4a0" }}>Oficinaz</span>{" "}
-              funcionando?
-            </h2>
-
-            <p style={{ color: "#5a6778", fontSize: 16, lineHeight: 1.75, marginBottom: 32 }}>
-              Em 30 minutos você vê o sistema rodando com exemplos reais de
-              oficinas como a sua — OS, financeiro, nota fiscal e estoque.
-              Sem enrolação, sem compromisso.
-            </p>
-
-            <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: 16, marginBottom: 32 }}>
               {beneficios.map((b) => (
-                <div key={b} style={{ display: "flex", alignItems: "flex-start", gap: 12 }}>
+                <div key={b} style={{ display: "flex", alignItems: "center", gap: 14 }}>
                   <div style={{
-                    width: 22, height: 22, borderRadius: 6, flexShrink: 0, marginTop: 1,
+                    width: 26, height: 26, borderRadius: 7, flexShrink: 0,
                     background: "#e4faf4", border: "1px solid #b8f1e4",
                     display: "flex", alignItems: "center", justifyContent: "center",
                   }}>
-                    <CheckCircle size={13} style={{ color: "#127055" }} />
+                    <CheckCircle size={14} style={{ color: "#127055" }} />
                   </div>
-                  <span style={{ color: "#111d2e", fontSize: 15, fontWeight: 500, lineHeight: 1.5 }}>{b}</span>
+                  <span style={{ color: "#111d2e", fontSize: 16, fontWeight: 500 }}>{b}</span>
                 </div>
               ))}
             </div>
+
+            {/* Testimonial */}
+            <div style={{
+              background: "#fffbeb", border: "1px solid #fde68a",
+              borderRadius: 12, padding: "20px 22px",
+            }}>
+              <p style={{ color: "#111d2e", fontSize: 15, fontWeight: 600, lineHeight: 1.6, marginBottom: 8 }}>
+                "A migração foi rápida e no mesmo dia já comecei a usar."
+              </p>
+              <span style={{ color: "#7a8897", fontSize: 13.5 }}>— Carlos A., oficina em São Paulo</span>
+            </div>
           </div>
 
-          {/* Right — CTA */}
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center" }}>
-
+          {/* Right — CTA card */}
+          <div style={{
+            background: "#fff", borderRadius: 20,
+            border: "1px solid #e2e6ec",
+            boxShadow: "0 8px 32px rgba(17,29,46,0.07)",
+            padding: "40px 36px",
+            display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center",
+          }}>
             <div style={{
-              width: 72, height: 72, borderRadius: 20,
-              background: "linear-gradient(135deg, rgba(46,196,160,0.12), rgba(18,112,85,0.08))",
-              border: "1px solid rgba(46,196,160,0.25)",
+              width: 60, height: 60, borderRadius: 16,
+              background: "linear-gradient(135deg, rgba(46,196,160,0.12), rgba(18,112,85,0.07))",
+              border: "1px solid rgba(46,196,160,0.22)",
               display: "flex", alignItems: "center", justifyContent: "center",
-              marginBottom: 24,
+              marginBottom: 20,
             }}>
-              <Video size={32} color="#2ec4a0" strokeWidth={1.5} />
+              <Video size={26} color="#2ec4a0" strokeWidth={1.6} />
             </div>
 
-            <div style={{ fontSize: 20, fontWeight: 800, color: "#111d2e", lineHeight: 1.3, marginBottom: 10 }}>
+            <div style={{ fontSize: 19, fontWeight: 800, color: "#111d2e", lineHeight: 1.3, marginBottom: 10 }}>
               30 minutos que podem mudar como você gerencia sua oficina.
             </div>
-            <p style={{ color: "#7a8897", fontSize: 14.5, lineHeight: 1.65, marginBottom: 32, maxWidth: 280 }}>
+            <p style={{ color: "#7a8897", fontSize: 15, lineHeight: 1.65, marginBottom: 28 }}>
               Entre em contato e agende sua demo.
             </p>
 
@@ -88,7 +94,7 @@ export default function DemoScheduling() {
               style={{
                 display: "flex", alignItems: "center", justifyContent: "center", gap: 10,
                 background: "linear-gradient(135deg, #1eb880 0%, #2ec4a0 100%)",
-                color: "#fff", padding: "17px 32px", borderRadius: 12, width: "100%",
+                color: "#fff", padding: "16px 28px", borderRadius: 12, width: "100%",
                 textDecoration: "none", fontSize: 16, fontWeight: 700,
                 boxShadow: "0 8px 28px rgba(46,196,160,0.35), inset 0 1px 0 rgba(255,255,255,0.2)",
                 transition: "transform 0.2s, box-shadow 0.2s",
@@ -99,17 +105,6 @@ export default function DemoScheduling() {
             >
               Agendar minha demonstração <ArrowRight size={18} />
             </a>
-
-            <div style={{
-              marginTop: 28, width: "100%",
-              background: "#fffbeb", border: "1px solid #fde68a",
-              borderRadius: 10, padding: "14px 16px",
-            }}>
-              <p style={{ color: "#111d2e", fontSize: 13.5, fontWeight: 600, marginBottom: 4, textAlign: "left" }}>
-                "A migração foi rápida e no mesmo dia já comecei a usar."
-              </p>
-              <p style={{ color: "#7a8897", fontSize: 13, textAlign: "left" }}>— Carlos A., oficina em São Paulo</p>
-            </div>
           </div>
 
         </div>
@@ -117,7 +112,7 @@ export default function DemoScheduling() {
 
       <style>{`
         @media (max-width: 768px) {
-          .demo-grid { grid-template-columns: 1fr !important; padding: 36px 28px !important; gap: 40px !important; }
+          .demo-grid { grid-template-columns: 1fr !important; }
         }
       `}</style>
     </section>
