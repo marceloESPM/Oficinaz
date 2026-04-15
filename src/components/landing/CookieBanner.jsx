@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Cookie, X } from "lucide-react";
 
 export default function CookieBanner() {
   const [visible, setVisible] = useState(false);
@@ -23,61 +22,43 @@ export default function CookieBanner() {
 
   return (
     <div style={{
-      position: "fixed", bottom: 24, left: "50%", transform: "translateX(-50%)",
+      position: "fixed", bottom: 0, left: 0, right: 0,
       zIndex: 200,
-      background: "#111d2e",
-      border: "1px solid rgba(255,255,255,0.10)",
-      borderRadius: 16,
-      boxShadow: "0 12px 48px rgba(0,0,0,0.30)",
-      padding: "18px 24px",
-      display: "flex", alignItems: "center", gap: 20,
-      maxWidth: 680, width: "calc(100% - 32px)",
-      flexWrap: "wrap",
+      background: "rgba(17,29,46,0.96)",
+      backdropFilter: "blur(8px)",
+      borderTop: "1px solid rgba(255,255,255,0.07)",
+      padding: "12px 24px",
+      display: "flex", alignItems: "center", justifyContent: "center",
+      gap: 20, flexWrap: "wrap",
     }}>
-      <div style={{ display: "flex", alignItems: "flex-start", gap: 12, flex: 1, minWidth: 220 }}>
-        <Cookie size={18} style={{ color: "#2ec4a0", flexShrink: 0, marginTop: 2 }} />
-        <p style={{ color: "#c4d8eb", fontSize: 13.5, lineHeight: 1.6, margin: 0 }}>
-          Utilizamos cookies para melhorar sua experiência.{" "}
-          Ao continuar navegando, você concorda com nossa{" "}
-          <a href="#" style={{ color: "#2ec4a0", textDecoration: "underline", textUnderlineOffset: 3 }}>
-            Política de Privacidade
-          </a>{" "}
-          em conformidade com a LGPD.
-        </p>
-      </div>
-
-      <div style={{ display: "flex", gap: 10, flexShrink: 0 }}>
-        <button
-          onClick={handleReject}
-          style={{
-            background: "transparent",
-            border: "1px solid rgba(255,255,255,0.18)",
-            color: "#8eb0d0",
-            padding: "9px 18px", borderRadius: 8,
-            fontSize: 13.5, fontWeight: 600, cursor: "pointer",
-            fontFamily: "inherit",
-            transition: "border-color 0.2s, color 0.2s",
-          }}
-          onMouseEnter={e => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.35)"; e.currentTarget.style.color = "#fff"; }}
-          onMouseLeave={e => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.18)"; e.currentTarget.style.color = "#8eb0d0"; }}
+      <p style={{ color: "#8eb0d0", fontSize: 13, margin: 0, lineHeight: 1.5 }}>
+        Usamos cookies para melhorar sua experiência, conforme a{" "}
+        <a href="#" style={{ color: "#2ec4a0", textDecoration: "none", fontWeight: 600 }}>
+          LGPD
+        </a>.
+      </p>
+      <div style={{ display: "flex", gap: 8, flexShrink: 0 }}>
+        <button onClick={handleReject} style={{
+          background: "transparent", border: "1px solid rgba(255,255,255,0.15)",
+          color: "#7a8897", padding: "6px 14px", borderRadius: 6,
+          fontSize: 12.5, fontWeight: 600, cursor: "pointer", fontFamily: "inherit",
+          transition: "color 0.2s",
+        }}
+          onMouseEnter={e => e.currentTarget.style.color = "#c4d8eb"}
+          onMouseLeave={e => e.currentTarget.style.color = "#7a8897"}
         >
           Rejeitar
         </button>
-        <button
-          onClick={handleAccept}
-          style={{
-            background: "#2ec4a0",
-            border: "1px solid transparent",
-            color: "#fff",
-            padding: "9px 20px", borderRadius: 8,
-            fontSize: 13.5, fontWeight: 700, cursor: "pointer",
-            fontFamily: "inherit",
-            transition: "background 0.2s",
-          }}
+        <button onClick={handleAccept} style={{
+          background: "#2ec4a0", border: "none",
+          color: "#fff", padding: "6px 16px", borderRadius: 6,
+          fontSize: 12.5, fontWeight: 700, cursor: "pointer", fontFamily: "inherit",
+          transition: "background 0.2s",
+        }}
           onMouseEnter={e => e.currentTarget.style.background = "#1eb880"}
           onMouseLeave={e => e.currentTarget.style.background = "#2ec4a0"}
         >
-          Aceitar cookies
+          Aceitar
         </button>
       </div>
     </div>
