@@ -61,7 +61,10 @@ export default function Footer() {
               style={{ height: 121, width: "auto", objectFit: "contain", display: "block", marginBottom: 16, mixBlendMode: "multiply" }}
             />
             <p style={{ color: "#7a8897", fontSize: 13, lineHeight: 1.6, maxWidth: 280, margin: 0 }}>
-              ERP completo para oficinas mecânicas e centros automotivos.<br/>Somos parceiros VHSYS.
+              ERP completo para oficinas mecânicas e centros automotivos.
+            </p>
+            <p style={{ color: "#a0acbb", fontSize: 11, lineHeight: 1.5, maxWidth: 280, margin: "8px 0 0", letterSpacing: 0.1 }}>
+              Somos parceiros VHSYS.
             </p>
             <div style={{ marginTop: 20, paddingTop: 20, borderTop: "1px solid rgba(226,230,236,0.4)" }}>
               <div style={{ color: "#a0acbb", fontSize: 12, fontWeight: 500, marginBottom: 6 }}>MRP DESENVOLVIMENTO E IMPLANTACAO DE SOLUCOES EM TI LTDA</div>
