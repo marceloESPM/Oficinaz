@@ -22,54 +22,41 @@ export default function CookieBanner() {
 
   return (
     <div style={{
-      position: "fixed", bottom: 24, left: 24,
+      position: "fixed", bottom: 20, left: 20,
       zIndex: 200,
-      background: "#111d2e",
-      border: "1px solid rgba(46,196,160,0.22)",
-      borderRadius: 14,
-      boxShadow: "0 8px 32px rgba(0,0,0,0.28)",
-      padding: "20px 22px",
-      maxWidth: 300,
-      width: "calc(100% - 48px)",
+      background: "rgba(255,255,255,0.96)",
+      backdropFilter: "blur(12px)",
+      border: "1px solid #e2e6ec",
+      borderRadius: 12,
+      boxShadow: "0 4px 24px rgba(17,29,46,0.10)",
+      padding: "14px 16px",
+      maxWidth: 260,
+      width: "calc(100% - 40px)",
     }}>
-      {/* Header */}
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 10 }}>
-        <span style={{ color: "#fff", fontSize: 14, fontWeight: 700 }}>Controle sua privacidade</span>
-        <span style={{ color: "#2ec4a0", fontSize: 11, fontWeight: 700, letterSpacing: 0.5 }}>LGPD</span>
-      </div>
-
-      {/* Body */}
-      <p style={{ color: "#8eb0d0", fontSize: 13, lineHeight: 1.6, margin: "0 0 10px 0" }}>
-        Nosso site usa cookies para melhorar a navegação e a sua experiência.
+      <p style={{ color: "#5a6778", fontSize: 12.5, lineHeight: 1.6, margin: "0 0 4px 0" }}>
+        Usamos cookies para melhorar sua experiência.{" "}
+        <a href="#" style={{ color: "#2ec4a0", fontWeight: 600, textDecoration: "none" }}>
+          Política de Privacidade
+        </a>
       </p>
-      <a href="#" style={{ color: "#2ec4a0", fontSize: 13, fontWeight: 600, textDecoration: "none", display: "inline-block", marginBottom: 18 }}
-        onMouseEnter={e => e.currentTarget.style.textDecoration = "underline"}
-        onMouseLeave={e => e.currentTarget.style.textDecoration = "none"}
-      >
-        Política de Privacidade
-      </a>
 
-      {/* Actions */}
-      <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
+      <div style={{ display: "flex", gap: 6, marginTop: 12 }}>
         <button onClick={handleReject} style={{
-          flex: 1,
-          background: "transparent",
-          border: "1px solid rgba(255,255,255,0.18)",
-          color: "#c4d8eb", padding: "9px 0", borderRadius: 8,
-          fontSize: 13, fontWeight: 600, cursor: "pointer", fontFamily: "inherit",
-          transition: "border-color 0.2s",
+          flex: 1, background: "transparent",
+          border: "1px solid #e2e6ec", color: "#7a8897",
+          padding: "7px 0", borderRadius: 7,
+          fontSize: 12, fontWeight: 600, cursor: "pointer", fontFamily: "inherit",
+          transition: "border-color 0.2s, color 0.2s",
         }}
-          onMouseEnter={e => e.currentTarget.style.borderColor = "rgba(255,255,255,0.35)"}
-          onMouseLeave={e => e.currentTarget.style.borderColor = "rgba(255,255,255,0.18)"}
+          onMouseEnter={e => { e.currentTarget.style.borderColor = "#c0c8d4"; e.currentTarget.style.color = "#5a6778"; }}
+          onMouseLeave={e => { e.currentTarget.style.borderColor = "#e2e6ec"; e.currentTarget.style.color = "#7a8897"; }}
         >
           Rejeitar
         </button>
         <button onClick={handleAccept} style={{
-          flex: 1,
-          background: "#2ec4a0",
-          border: "none",
-          color: "#fff", padding: "9px 0", borderRadius: 8,
-          fontSize: 13, fontWeight: 700, cursor: "pointer", fontFamily: "inherit",
+          flex: 1, background: "#2ec4a0", border: "none",
+          color: "#fff", padding: "7px 0", borderRadius: 7,
+          fontSize: 12, fontWeight: 700, cursor: "pointer", fontFamily: "inherit",
           transition: "background 0.2s",
         }}
           onMouseEnter={e => e.currentTarget.style.background = "#1eb880"}
