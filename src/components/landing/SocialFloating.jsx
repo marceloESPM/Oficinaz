@@ -14,7 +14,7 @@ export default function SocialFloating() {
         display: "flex",
         alignItems: "center",
         gap: 10,
-        background: "linear-gradient(135deg, #1eb880 0%, #2ec4a0 100%)",
+        background: "linear-gradient(135deg, #27b89e 0%, #2ec4a0 100%)",
         color: "#fff",
         borderRadius: 9999,
         padding: "12px 20px 12px 14px",
