@@ -169,7 +169,7 @@ export default function Hero() {
             <div style={{
               display: "inline-flex", alignItems: "center", gap: 8, alignSelf: "flex-start",
               background: "rgba(46,196,160,0.08)", border: "1px solid rgba(46,196,160,0.25)",
-              padding: "7px 15px", borderRadius: 100, marginBottom: 20,
+              padding: "7px 15px", borderRadius: 100, marginBottom: 20, marginTop: 40,
             }}>
               <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#2ec4a0", display: "inline-block" }} />
               <span style={{ color: "#2ec4a0", fontSize: 13.5, fontWeight: 600, letterSpacing: 0.4 }}>
