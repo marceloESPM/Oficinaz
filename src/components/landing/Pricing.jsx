@@ -134,7 +134,15 @@ export default function Pricing() {
             30 dias grátis em todos os planos. Sem cartão de crédito. Cancele quando quiser.
           </p>
 
-          <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 12, marginTop: 28 }}>
+          <div style={{
+            display: "inline-flex", alignItems: "center", gap: 6,
+            background: "#fff8ed", border: "1px solid #fed7aa",
+            borderRadius: 100, padding: "4px 12px", marginTop: 20,
+          }}>
+            <span style={{ fontSize: 11, color: "#c2410c", fontWeight: 700, letterSpacing: 0.4 }}>🏷 Preços de lançamento — válidos por tempo limitado</span>
+          </div>
+
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 12, marginTop: 16 }}>
             <span style={{ color: !yearly ? "#111d2e" : "#a0acbb", fontSize: 14, fontWeight: 600 }}>Mensal</span>
             <div onClick={() => setYearly(!yearly)} style={{
               width: 48, height: 26, borderRadius: 100,
