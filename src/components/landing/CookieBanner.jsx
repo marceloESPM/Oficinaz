@@ -36,16 +36,16 @@ export default function CookieBanner() {
       {/* Cookie icon */}
       <div style={{ marginBottom: 10 }}>
         <svg width="28" height="28" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="32" cy="32" r="28" fill="#fde68a" stroke="#f59e0b" strokeWidth="2"/>
-          <circle cx="22" cy="22" r="4" fill="#92400e"/>
-          <circle cx="38" cy="18" r="3" fill="#92400e"/>
-          <circle cx="44" cy="34" r="4" fill="#92400e"/>
-          <circle cx="26" cy="40" r="3" fill="#92400e"/>
-          <circle cx="38" cy="44" r="3.5" fill="#92400e"/>
-          <circle cx="18" cy="36" r="2.5" fill="#92400e"/>
-          <path d="M32 10 Q36 6 40 10" stroke="#f59e0b" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
-          <path d="M48 22 Q52 18 56 22" stroke="#f59e0b" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
-          <path d="M10 44 Q14 40 18 44" stroke="#f59e0b" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
+          <circle cx="32" cy="32" r="28" fill="#e4faf4" stroke="#2ec4a0" strokeWidth="2"/>
+          <circle cx="22" cy="22" r="4" fill="#127055"/>
+          <circle cx="38" cy="18" r="3" fill="#127055"/>
+          <circle cx="44" cy="34" r="4" fill="#127055"/>
+          <circle cx="26" cy="40" r="3" fill="#127055"/>
+          <circle cx="38" cy="44" r="3.5" fill="#127055"/>
+          <circle cx="18" cy="36" r="2.5" fill="#127055"/>
+          <path d="M32 10 Q36 6 40 10" stroke="#2ec4a0" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
+          <path d="M48 22 Q52 18 56 22" stroke="#2ec4a0" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
+          <path d="M10 44 Q14 40 18 44" stroke="#2ec4a0" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
         </svg>
       </div>
 
