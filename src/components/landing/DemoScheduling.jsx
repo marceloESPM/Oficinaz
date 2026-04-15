@@ -36,7 +36,7 @@ export default function DemoScheduling() {
               marginBottom: 16,
             }}>
               Quer ver o <span style={{ color: "#2ec4a0" }}>Oficinaz</span>{" "}
-              funcionando na prática?
+              funcionando?
             </h2>
 
             <p style={{ color: "#5a6778", fontSize: 16, lineHeight: 1.75, marginBottom: 32 }}>
