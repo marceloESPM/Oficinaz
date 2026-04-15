@@ -126,21 +126,21 @@ export default function Pricing() {
     <section id="pricing" style={{ padding: "100px 24px", background: "#ffffff" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
         <div style={{ textAlign: "center", marginBottom: 72 }}>
-          <span style={{ color: "#2ec4a0", fontSize: 13, fontWeight: 700, letterSpacing: 1.5, textTransform: "uppercase" }}>Preços</span>
+          <div style={{ display: "inline-flex", alignItems: "center", gap: 10 }}>
+            <span style={{ color: "#2ec4a0", fontSize: 13, fontWeight: 700, letterSpacing: 1.5, textTransform: "uppercase" }}>Preços</span>
+            <span style={{
+              background: "#fff8ed", border: "1px solid #fed7aa",
+              borderRadius: 4, padding: "2px 7px",
+              fontSize: 10.5, color: "#c2410c", fontWeight: 700, letterSpacing: 0.5,
+              textTransform: "uppercase",
+            }}>Lançamento</span>
+          </div>
           <h2 style={{ fontSize: "clamp(28px, 4vw, 46px)", fontWeight: 800, color: "#111d2e", marginTop: 12, letterSpacing: "-1px" }}>
             Planos para oficinas e centro automotivos de todos os tamanhos<span style={{ color: "#2ec4a0" }}>.</span>
           </h2>
           <p style={{ color: "#5a6778", fontSize: 17, maxWidth: 520, margin: "16px auto 0" }}>
             30 dias grátis em todos os planos. Sem cartão de crédito. Cancele quando quiser.
           </p>
-
-          <div style={{
-            display: "inline-flex", alignItems: "center", gap: 6,
-            background: "#fff8ed", border: "1px solid #fed7aa",
-            borderRadius: 100, padding: "4px 12px", marginTop: 20,
-          }}>
-            <span style={{ fontSize: 11, color: "#c2410c", fontWeight: 700, letterSpacing: 0.4 }}>🏷 Preços de lançamento — válidos por tempo limitado</span>
-          </div>
 
           <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 12, marginTop: 16 }}>
             <span style={{ color: !yearly ? "#111d2e" : "#a0acbb", fontSize: 14, fontWeight: 600 }}>Mensal</span>
