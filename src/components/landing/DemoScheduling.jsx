@@ -100,10 +100,6 @@ export default function DemoScheduling() {
               Agendar minha demonstração <ArrowRight size={18} />
             </a>
 
-            <p style={{ color: "#a0acbb", fontSize: 12.5, marginTop: 16 }}>
-              Sem cartão de crédito · Sem compromisso · Cancele quando quiser
-            </p>
-
             <div style={{ marginTop: 28, paddingTop: 24, borderTop: "1px solid #f0f2f5", width: "100%" }}>
               <p style={{ color: "#111d2e", fontSize: 13.5, fontWeight: 600, marginBottom: 4, textAlign: "left" }}>
                 "A migração foi rápida e no mesmo dia já comecei a usar."
