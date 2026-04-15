@@ -78,7 +78,7 @@ export default function DemoScheduling() {
               30 minutos que podem mudar como você gerencia sua oficina.
             </div>
             <p style={{ color: "#7a8897", fontSize: 14.5, lineHeight: 1.65, marginBottom: 32, maxWidth: 280 }}>
-              Escolha o canal que preferir e agende na hora que for melhor para você.
+              Entre em contato e agende sua demo.
             </p>
 
             <a
