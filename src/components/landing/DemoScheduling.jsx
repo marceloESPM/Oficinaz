@@ -23,8 +23,7 @@ export default function DemoScheduling() {
             Quer ver o <span style={{ color: "#2ec4a0" }}>Oficinaz</span> funcionando?
           </h2>
           <p style={{ color: "#5a6778", fontSize: 17, maxWidth: 500, margin: "16px auto 0", lineHeight: 1.7 }}>
-            Em 30 minutos você vê o sistema rodando com exemplos reais de
-            oficinas como a sua. Sem enrolação, sem compromisso.
+            Em 30 minutos você vê o sistema funcionando e como ele se encaixa na sua rotina.
           </p>
         </div>
 
