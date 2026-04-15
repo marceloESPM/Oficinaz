@@ -1,7 +1,7 @@
 import { ArrowRight, CheckCircle, Video } from "lucide-react";
 
 const beneficios = [
-  "Demo ao vivo com o sistema real — não um slide",
+  "Demonstração ao vivo com o sistema real",
   "Tire todas as suas dúvidas em tempo real",
   "30 dias grátis para testar sem pressão",
 ];
