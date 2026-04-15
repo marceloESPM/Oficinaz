@@ -15,6 +15,7 @@ import UseCases from "../components/landing/UseCases";
 import FAQ from "../components/landing/FAQ";
 import Footer from "../components/landing/Footer";
 import SocialFloating from "../components/landing/SocialFloating";
+import CookieBanner from "../components/landing/CookieBanner";
 
 export default function LandingPage() {
   const [barVisible, setBarVisible] = useState(true);
@@ -24,6 +25,7 @@ export default function LandingPage() {
     <div style={{ fontFamily: "'Outfit', system-ui, sans-serif", background: "#ffffff", color: "#111d2e", overflowX: "hidden" }}>
       {barVisible && <AnnouncementBar onClose={() => setBarVisible(false)} />}
       <SocialFloating />
+      <CookieBanner />
       <Navbar barHeight={barHeight} />
       <main>
         <Hero />
