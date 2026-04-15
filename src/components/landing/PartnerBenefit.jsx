@@ -125,7 +125,7 @@ export default function PartnerBenefit() {
               <ArrowRight size={16} />
             </a>
 
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
+            <div className="partner-cta-btns" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
               <a href="#" style={{
                 display: "flex", alignItems: "center", justifyContent: "center", gap: 8,
                 color: "#a8c4dc",

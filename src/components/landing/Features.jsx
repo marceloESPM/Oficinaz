@@ -106,7 +106,7 @@ export default function Features() {
         </div>
 
         {/* Tabs */}
-        <div style={{ display: "flex", gap: 12, flexWrap: "wrap", justifyContent: "center", marginBottom: 56 }}>
+        <div className="feat-tabs" style={{ display: "flex", gap: 12, flexWrap: "wrap", justifyContent: "center", marginBottom: 56 }}>
           {features.map((f) => (
             <button key={f.id} onClick={() => setActive(f.id)} style={{
              padding: "12px 24px", borderRadius: 100, border: "1px solid",

@@ -54,7 +54,7 @@ export default function Footer() {
         }} className="footer-grid">
 
           {/* Brand — spans both grid rows so MRP block aligns with row 2 */}
-          <div style={{ gridRow: "1 / 3" }}>
+          <div className="footer-brand" style={{ gridRow: "1 / 3" }}>
             <img
               src={LOGO}
               alt="Oficinaz"
@@ -91,7 +91,7 @@ export default function Footer() {
           ))}
 
           {/* Social icons — row 2, cols 4–5 (Suporte + Legal), aligned with MRP block */}
-          <div style={{
+          <div className="footer-social" style={{
             gridColumn: "4 / 6",
             gridRow: 2,
             display: "flex",
@@ -156,7 +156,11 @@ export default function Footer() {
       </div>
       <style>{`
         @media (max-width: 900px) { .footer-grid { grid-template-columns: 1fr 1fr !important; } }
-        @media (max-width: 500px) { .footer-grid { grid-template-columns: 1fr !important; } }
+        @media (max-width: 768px) {
+          .footer-grid { grid-template-columns: 1fr !important; gap: 24px !important; }
+          .footer-brand { grid-row: auto !important; }
+          .footer-social { grid-column: auto !important; grid-row: auto !important; justify-content: flex-start !important; }
+        }
       `}</style>
     </footer>
   );

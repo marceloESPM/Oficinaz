@@ -85,10 +85,94 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
+    box-sizing: border-box;
   }
 
   body {
     @apply bg-background text-foreground;
     font-family: 'Outfit', sans-serif;
   }
+}
+
+/* ─── Landing Page — Mobile Responsiveness ─────────────────────── */
+
+/* All sections except the hero get reduced padding on mobile */
+@media (max-width: 768px) {
+  main section:not(.hero-section) {
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* AnnouncementBar — keep 44px height, shrink text to fit on small screens */
+  .ann-bar-text {
+    font-size: 11.5px !important;
+  }
+
+  /* Features tabs — horizontal scroll on small screens */
+  .feat-tabs {
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    justify-content: flex-start !important;
+    padding-bottom: 8px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .feat-tabs::-webkit-scrollbar { display: none; }
+  .feat-tabs button {
+    flex-shrink: 0 !important;
+    padding: 10px 16px !important;
+    font-size: 13px !important;
+  }
+
+  /* SocialProof — 2×2 grid with inner border fix */
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .stats-grid > div {
+    border-right: none !important;
+    border-bottom: 1px solid #e2e6ec !important;
+    padding: 20px 12px !important;
+  }
+  .stats-grid > div:nth-child(odd)  { border-right: 1px solid #e2e6ec !important; }
+  .stats-grid > div:last-child      { border-bottom: none !important; }
+  .stats-grid > div:nth-last-child(2) { border-bottom: none !important; }
+
+  /* Footer — flat single column */
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+  .footer-brand { grid-row: auto !important; }
+  .footer-social {
+    grid-column: auto !important;
+    grid-row: auto !important;
+    justify-content: flex-start !important;
+  }
+
+  /* PartnerBenefit — stack the 2 secondary CTA buttons */
+  .partner-cta-btns {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* DemoScheduling */
+  .demo-grid { gap: 32px !important; }
+
+  /* ComplementaryServices */
+  .comp-grid { gap: 32px !important; }
+
+  /* Pricing section heading margin */
+  #pricing .price-grid { gap: 16px !important; }
+}
+
+@media (max-width: 480px) {
+  /* Use cases — go to single column on very small phones */
+  .use-cases-grid { grid-template-columns: 1fr !important; }
+
+  /* Pain points — single column */
+  .pain-grid { grid-template-columns: 1fr !important; }
+
+  /* Steps grid */
+  .steps-grid { grid-template-columns: 1fr !important; }
 }

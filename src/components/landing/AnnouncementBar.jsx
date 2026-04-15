@@ -15,8 +15,8 @@ export default function AnnouncementBar({ onClose }) {
     }}>
       <Gift size={16} color="#D97706" style={{ flexShrink: 0 }} />
 
-      <p style={{
-        margin: 0, fontSize: 13.5, lineHeight: 1,
+      <p className="ann-bar-text" style={{
+        margin: 0, fontSize: 13.5, lineHeight: 1.4,
         color: "#111d2e", fontWeight: 500, letterSpacing: 0.1,
         whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis",
       }}>

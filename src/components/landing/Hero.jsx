@@ -108,7 +108,7 @@ export default function Hero() {
   const t = getTheme(darkMode);
 
   return (
-    <section style={{
+    <section className="hero-section" style={{
       minHeight: "100vh",
       display: "flex",
       alignItems: "flex-start",
