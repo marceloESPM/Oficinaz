@@ -3,7 +3,7 @@ import { ArrowRight, CheckCircle, Video } from "lucide-react";
 const beneficios = [
   "Demonstração ao vivo",
   "Tire todas as suas dúvidas com nossa equipe",
-  "30 dias grátis para testar sem pressão",
+  "30 dias grátis para testar",
 ];
 
 export default function DemoScheduling() {
