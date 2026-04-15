@@ -14,7 +14,7 @@ const produtos = [
 { label: "ERP", href: "#", badge: null },
 { label: "Contabilidade", href: "#", badge: "em breve" },
 { label: "Checklist Automotivo", href: "#", badge: "em breve" },
-{ label: "Central de compras", href: "#", badge: "em breve" },
+{ label: "Central de Compras", href: "#", badge: "em breve" },
 { label: "Agendamento de Serviços", href: "#", badge: "em breve" },
 { label: "Link de Pagamentos", href: "#", badge: "em breve" }
 ];
