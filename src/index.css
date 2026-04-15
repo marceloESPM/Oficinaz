@@ -96,21 +96,37 @@
 
 /* ─── Landing Page — Mobile Responsiveness ─────────────────────── */
 
-/* All sections except the hero get reduced padding on mobile */
 @media (max-width: 768px) {
+
+  /* ── Section padding ── */
   main section:not(.hero-section) {
-    padding-top: 64px !important;
-    padding-bottom: 64px !important;
-    padding-left: 16px !important;
-    padding-right: 16px !important;
+    padding-top: 56px !important;
+    padding-bottom: 56px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
 
-  /* AnnouncementBar — keep 44px height, shrink text to fit on small screens */
-  .ann-bar-text {
-    font-size: 11.5px !important;
+  /* ── AnnouncementBar ── */
+  .ann-bar-text { font-size: 11.5px !important; }
+
+  /* ── Hero: stack copy above visual ── */
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
+  }
+  .hero-ctas {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 12px !important;
+  }
+  .hero-ctas a {
+    justify-content: center !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
   }
 
-  /* Features tabs — horizontal scroll on small screens */
+  /* ── Features — tabs: horizontal scroll; content: 1-col ── */
   .feat-tabs {
     flex-wrap: nowrap !important;
     overflow-x: auto !important;
@@ -125,11 +141,13 @@
     padding: 10px 16px !important;
     font-size: 13px !important;
   }
-
-  /* SocialProof — 2×2 grid with inner border fix */
-  .stats-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
+  .feat-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
   }
+
+  /* ── SocialProof — 2×2 ── */
+  .stats-grid { grid-template-columns: repeat(2, 1fr) !important; }
   .stats-grid > div {
     border-right: none !important;
     border-bottom: 1px solid #e2e6ec !important;
@@ -139,7 +157,34 @@
   .stats-grid > div:last-child      { border-bottom: none !important; }
   .stats-grid > div:nth-last-child(2) { border-bottom: none !important; }
 
-  /* Footer — flat single column */
+  /* ── PainPoints — 2 col ── */
+  .pain-grid { grid-template-columns: repeat(2, 1fr) !important; }
+
+  /* ── HowItWorks — 2 col ── */
+  .steps-grid { grid-template-columns: repeat(2, 1fr) !important; }
+
+  /* ── Testimonials — 2 col ── */
+  .testi-grid { grid-template-columns: repeat(2, 1fr) !important; }
+
+  /* ── Pricing — 1 col ── */
+  .price-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  /* ── DemoScheduling — 1 col ── */
+  .demo-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+
+  /* ── ComplementaryServices — 1 col ── */
+  .comp-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+
+  /* ── Footer — single column ── */
   .footer-grid {
     grid-template-columns: 1fr !important;
     gap: 24px !important;
@@ -151,28 +196,38 @@
     justify-content: flex-start !important;
   }
 
-  /* PartnerBenefit — stack the 2 secondary CTA buttons */
-  .partner-cta-btns {
-    grid-template-columns: 1fr !important;
-  }
+  /* ── PartnerBenefit — stack CTA buttons ── */
+  .partner-cta-btns { grid-template-columns: 1fr !important; }
 
-  /* DemoScheduling */
-  .demo-grid { gap: 32px !important; }
+  /* ── Google best practice: body paragraphs min 16px ── */
+  p { font-size: clamp(15px, 4vw, 17px) !important; }
 
-  /* ComplementaryServices */
-  .comp-grid { gap: 32px !important; }
+  /* ── Headings: ensure comfortable reading ── */
+  h2 { letter-spacing: -0.5px !important; }
+  h3 { font-size: clamp(15px, 4.5vw, 18px) !important; }
 
-  /* Pricing section heading margin */
-  #pricing .price-grid { gap: 16px !important; }
+  /* ── Tap targets: buttons and links comfortable to tap ── */
+  .hero-ctas a { min-height: 52px; }
 }
 
 @media (max-width: 480px) {
-  /* Use cases — go to single column on very small phones */
-  .use-cases-grid { grid-template-columns: 1fr !important; }
+  main section:not(.hero-section) {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
 
-  /* Pain points — single column */
-  .pain-grid { grid-template-columns: 1fr !important; }
+  /* All multi-col grids collapse to 1 on very small phones */
+  .use-cases-grid,
+  .pain-grid,
+  .steps-grid,
+  .testi-grid,
+  .price-grid {
+    grid-template-columns: 1fr !important;
+  }
 
-  /* Steps grid */
-  .steps-grid { grid-template-columns: 1fr !important; }
+  /* Hero content: tighter spacing */
+  .hero-grid { gap: 0 !important; }
+
+  /* Section headings scale down gently */
+  h2 { font-size: clamp(26px, 7vw, 38px) !important; }
 }

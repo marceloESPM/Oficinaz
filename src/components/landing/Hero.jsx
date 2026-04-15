@@ -215,7 +215,7 @@ export default function Hero() {
             </ul>
 
             {/* CTAs */}
-            <div style={{ display: "flex", gap: 14, flexWrap: "wrap", alignItems: "center", marginBottom: 14 }}>
+            <div style={{ display: "flex", gap: 14, flexWrap: "wrap", alignItems: "center", marginBottom: 14 }} className="hero-ctas">
               <a href="#pricing" style={{
                 display: "inline-flex", alignItems: "center", gap: 8,
                 background: "linear-gradient(135deg, #1eb880 0%, #2ec4a0 100%)",
