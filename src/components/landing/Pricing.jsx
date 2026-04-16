@@ -137,7 +137,7 @@ export default function Pricing() {
           </div>
         </div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 24, alignItems: "start" }} className="price-grid">
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 24, alignItems: "stretch" }} className="price-grid">
           {plans.map((plan) => (
             <div key={plan.name} style={{
               background: plan.highlight ? "#111d2e" : "#f8f9fb",
@@ -145,6 +145,7 @@ export default function Pricing() {
               borderRadius: 20, padding: 28, position: "relative",
               boxShadow: plan.highlight ? "0 20px 60px rgba(17,29,46,0.15)" : "none",
               transition: "transform 0.3s",
+              display: "flex", flexDirection: "column",
             }}
               onMouseEnter={e => e.currentTarget.style.transform = "translateY(-4px)"}
               onMouseLeave={e => e.currentTarget.style.transform = "none"}>
@@ -201,6 +202,7 @@ export default function Pricing() {
                 padding: "12px", borderRadius: 10, textDecoration: "none",
                 fontSize: 14, fontWeight: 700, marginBottom: 24,
                 transition: "opacity 0.2s",
+                marginTop: "auto",
               }}
                 onMouseEnter={e => e.currentTarget.style.opacity = "0.85"}
                 onMouseLeave={e => e.currentTarget.style.opacity = "1"}>
