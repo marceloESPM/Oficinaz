@@ -48,7 +48,7 @@ const plans = [
   {
     name: "Completo",
     price: { monthly: 417, yearly: 375 },
-    desc: "Pensado e projetado para oficinas médias",
+    desc: "Pensado e projetado para oficinas de médio porte",
     highlight: true,
     badge: "Mais escolhido",
     consulta: false,
