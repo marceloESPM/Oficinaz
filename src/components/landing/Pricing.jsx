@@ -15,7 +15,7 @@ const allFeatures = [
   { label: "PDV (Ponto de Venda / Venda Balcão)" },
   { label: "Gestão Multi CNPJ" },
   { label: "Conciliação bancária" },
-  { label: "Responsivo mobile. Crie o ícone de atalho no seu celular e use como um app." },
+  { label: "Responsivo mobile.", sublabel: "Crie o ícone de atalho no seu celular e use como um app." },
 ];
 
 const plans = [
@@ -235,9 +235,13 @@ export default function Pricing() {
                              ? (plan.highlight ? "#3a4a5a" : "#c0c8d4")
                              : (plan.highlight ? "#fff" : "#5a6778"),
                            fontSize: 14, lineHeight: 1.6,
-                          textDecoration: val === false ? "none" : "none",
                         }}>
                           {f.label}{labelSuffix}
+                          {f.sublabel && (
+                            <span style={{ display: "block", fontSize: 12, opacity: 0.7, marginTop: 1 }}>
+                              ({f.sublabel})
+                            </span>
+                          )}
                         </span>
                       </li>
                     );
