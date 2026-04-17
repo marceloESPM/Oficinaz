@@ -27,7 +27,7 @@ const plans = [
     badge: null,
     consulta: false,
     users: "1 usuário",
-    extraUser: "R$99,00/usuário adicional",
+    extraUser: "R$99/usuário adicional",
     cta: "Assinar agora",
     features: [
       true,   // Treinamento gratuito
@@ -188,9 +188,14 @@ export default function Pricing() {
                     </div>
                   )}
                   {plan.extraUser && (
-                    <div style={{ display: "flex", alignItems: "center", gap: 6, marginTop: 6 }}>
-                      <span style={{ color: "#a0acbb", fontSize: 12 }}>•</span>
-                      <span style={{ color: "#a0acbb", fontSize: 12, lineHeight: 1.4 }}>{plan.extraUser}</span>
+                    <div style={{
+                      display: "inline-flex", alignItems: "center", gap: 5,
+                      marginTop: 8, padding: "3px 10px 3px 8px",
+                      background: "#f8f9fb", border: "1px solid #e2e6ec",
+                      borderRadius: 100,
+                    }}>
+                      <Users size={11} style={{ color: "#a0acbb", flexShrink: 0 }} />
+                      <span style={{ color: "#a0acbb", fontSize: 11.5, fontWeight: 500, letterSpacing: 0.1 }}>{plan.extraUser}</span>
                     </div>
                   )}
                 </>
