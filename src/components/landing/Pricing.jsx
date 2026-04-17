@@ -7,7 +7,6 @@ const allFeatures = [
   { label: "Emissão de notas fiscais (NF-e, NFC-e, NFS-e)" },
   { label: "Integração contábil" },
   { label: "Suporte gratuito" },
-  { label: "App Android e iOS" },
   { label: "DRE gerencial" },
   { label: "Gestão de vendas" },
   { label: "Serviços recorrentes" },
@@ -16,6 +15,7 @@ const allFeatures = [
   { label: "PDV (Ponto de Venda / Venda Balcão)" },
   { label: "Gestão Multi CNPJ" },
   { label: "Conciliação bancária" },
+  { label: "Responsivo mobile. Crie o ícone de atalho no seu celular e use como um app." },
 ];
 
 const plans = [
@@ -30,20 +30,20 @@ const plans = [
     extraUser: "R$99/usuário adicional",
     cta: "Assinar agora",
     features: [
-      true,   // Treinamento gratuito
+      true,     // Treinamento gratuito
       "básica", // Gestão financeira
-      true,   // Emissão de notas fiscais
-      true,   // Integração contábil
-      true,   // Suporte gratuito
-      true,   // App Android e iOS
-      false,  // DRE gerencial
-      false,  // Gestão de vendas
-      false,  // Serviços recorrentes
-      false,  // Relatórios de serviços
-      false,  // Controle de estoque completo
-      false,  // PDV
-      false,  // Gestão Multi CNPJ
-      false,  // Conciliação bancária
+      true,     // Emissão de notas fiscais
+      true,     // Integração contábil
+      true,     // Suporte gratuito
+      false,    // DRE gerencial
+      false,    // Gestão de vendas
+      false,    // Serviços recorrentes
+      false,    // Relatórios de serviços
+      false,    // Controle de estoque completo
+      false,    // PDV
+      false,    // Gestão Multi CNPJ
+      false,    // Conciliação bancária
+      true,     // Responsivo mobile
     ],
   },
   {
