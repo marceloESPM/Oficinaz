@@ -27,6 +27,7 @@ const plans = [
     badge: null,
     consulta: false,
     users: "1 usuário",
+    extraUser: "R$99,00/usuário adicional",
     cta: "Assinar agora",
     features: [
       true,   // Treinamento gratuito
@@ -47,12 +48,12 @@ const plans = [
   },
   {
     name: "Completo",
-    price: { monthly: 417, yearly: 375 },
+    price: { monthly: 637, yearly: 573 },
     desc: "Pensado e projetado para oficinas de médio porte",
     highlight: true,
     badge: "Mais escolhido",
     consulta: false,
-    users: "3 usuários",
+    users: "5 usuários",
     cta: "Assinar agora",
     features: [
       true,
@@ -78,7 +79,7 @@ const plans = [
     highlight: false,
     badge: null,
     consulta: true,
-    users: "+3 usuários",
+    users: "+5 usuários",
     cta: "Falar com especialista",
     features: [
       true, true, true, true, true, true,
@@ -162,9 +163,9 @@ export default function Pricing() {
               <div style={{ marginBottom: 4, color: plan.highlight ? "#fff" : "#a0acbb", fontSize: 13, fontWeight: 700, textTransform: "uppercase", letterSpacing: 1 }}>{plan.name}</div>
 
               {/* Users badge */}
-              <div style={{ display: "inline-flex", alignItems: "center", gap: 5, background: plan.highlight ? "rgba(46,196,160,0.15)" : "#e4faf4", border: `1px solid ${plan.highlight ? "rgba(46,196,160,0.25)" : "#b8f1e4"}`, borderRadius: 8, padding: "4px 10px", marginBottom: 10 }}>
-                <Users size={12} style={{ color: "#2ec4a0", flexShrink: 0 }} />
-                <span style={{ color: "#127055", fontSize: 12, fontWeight: 700 }}>{plan.users}</span>
+              <div style={{ display: "inline-flex", alignItems: "center", gap: 6, background: plan.highlight ? "rgba(46,196,160,0.15)" : "#e4faf4", border: `1px solid ${plan.highlight ? "rgba(46,196,160,0.30)" : "#b8f1e4"}`, borderRadius: 8, padding: "5px 12px", marginBottom: 10 }}>
+                <Users size={13} style={{ color: "#2ec4a0", flexShrink: 0 }} />
+                <span style={{ color: plan.highlight ? "#4dd4b4" : "#127055", fontSize: 13, fontWeight: 700 }}>{plan.users}</span>
               </div>
 
               {plan.consulta ? (
@@ -184,6 +185,12 @@ export default function Pricing() {
                   {yearly && (
                     <div style={{ color: "#2ec4a0", fontSize: 12, marginBottom: 4 }}>
                       Cobrado R$ {plan.price.yearly * 12}/ano
+                    </div>
+                  )}
+                  {plan.extraUser && (
+                    <div style={{ display: "flex", alignItems: "center", gap: 6, marginTop: 6 }}>
+                      <span style={{ color: "#a0acbb", fontSize: 12 }}>•</span>
+                      <span style={{ color: "#a0acbb", fontSize: 12, lineHeight: 1.4 }}>{plan.extraUser}</span>
                     </div>
                   )}
                 </>
