@@ -21,7 +21,7 @@ const allFeatures = [
 const plans = [
   {
     name: "Essencial",
-    price: { monthly: 137, yearly: 123 },
+    price: { monthly: 137, yearly: 123, yearlyTotal: "1.477" },
     desc: "Para profissionais autonômos e pequenas oficinas",
     highlight: false,
     badge: null,
@@ -48,7 +48,7 @@ const plans = [
   },
   {
     name: "Completo",
-    price: { monthly: 637, yearly: 573 },
+    price: { monthly: 637, yearly: 573, yearlyTotal: "6.877" },
     desc: "Pensado e projetado para oficinas de médio porte",
     highlight: true,
     badge: "Mais escolhido",
@@ -95,7 +95,7 @@ function FeatureValue({ value }) {
 }
 
 export default function Pricing() {
-  const [yearly, setYearly] = useState(false);
+  const [yearly, setYearly] = useState(true);
 
   return (
     <section id="pricing" style={{ padding: "100px 24px", background: "#ffffff" }}>
@@ -184,7 +184,7 @@ export default function Pricing() {
                   </div>
                   {yearly && (
                     <div style={{ color: "#2ec4a0", fontSize: 12, marginBottom: 4 }}>
-                      Cobrado R$ {plan.price.yearly * 12}/ano
+                      Cobrado R$ {plan.price.yearlyTotal ?? plan.price.yearly * 12}/ano
                     </div>
                   )}
                   {plan.extraUser && (
